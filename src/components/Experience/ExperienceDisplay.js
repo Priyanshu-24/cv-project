@@ -2,8 +2,6 @@ import React from "react";
 
 function ExperienceDisplay({experience, delete_experience}) {
 
-    console.log(experience);
-
     return (
 
         experience.map((e) => {
