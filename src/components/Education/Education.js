@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import "./education.css";
 
 function Education({update_education}) {
 
@@ -24,8 +23,8 @@ function Education({update_education}) {
   }
 
   return (
-    <div className = "container-edu">
-      <div className = "heading-edu">Enter Educational Details: </div>
+    <div className = "container">
+      <div className = "heading">Enter Educational Details: </div>
       <div>
         <label>Enter School/College Name: </label>
         <input

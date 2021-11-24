@@ -1,4 +1,5 @@
 import React from "react";
+import "./skill.css";
 
 function SkillDisplay({skills, delete_skill}) {
 
@@ -6,7 +7,7 @@ function SkillDisplay({skills, delete_skill}) {
         
         skills.map((e) => {
             return(
-                <div>
+                <div className = "display-skill">
                     <div>{e.name}</div>
                     <div>
                         <button onClick = {(x) => {
@@ -14,7 +15,7 @@ function SkillDisplay({skills, delete_skill}) {
                             x.preventDefault();
                             delete_skill(e.key);
 
-                        }}>Delete</button>
+                        }}> X </button>
                     </div>
                 </div>
             )

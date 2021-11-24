@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import "./skill.css";
 
 function Skills({update_skill}) {
 
@@ -19,8 +18,8 @@ function Skills({update_skill}) {
       }
 
     return (
-        <div className = "container-skill">
-            <div className = "heading-skill">Add Skills:</div>
+        <div className = "container">
+            <div className = "heading">Add Skills:</div>
             <div>
                 <input type = "text" placeholder = "Enter Skill" value = {skills.name} name = "name" onChange = {(e) => enter_skill(e)}/>
             </div>

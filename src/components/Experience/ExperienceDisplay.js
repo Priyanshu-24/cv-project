@@ -1,4 +1,5 @@
 import React from "react";
+import "./experience.css";
 
 function ExperienceDisplay({experience, delete_experience}) {
 
@@ -7,9 +8,9 @@ function ExperienceDisplay({experience, delete_experience}) {
         experience.map((e) => {
 
             return(
-                <div>
-                    <div>{e.companyName}</div>
-                    <div>{e.designation}</div>
+                <div className = "display-exp">
+                    <div>Company's Name: {e.companyName}</div>
+                    <div>Designation: {e.designation}</div>
                     <div>From {e.dateBegin} to {e.dateEnd}</div>
                     <div>
                         <button onClick = {(x) => {

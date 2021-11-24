@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import "./basic_info.css";
 
 function Basic_Info({update_basic_info}) {
 

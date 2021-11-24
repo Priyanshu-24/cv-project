@@ -78,7 +78,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <h1 className = "main-heading">CV - APP</h1>
       <div className="input-fields">
         <BasicInfo update_basic_info = {update_basic_info}/>
         <hr/>
@@ -87,12 +87,18 @@ function App() {
         <Skills update_skill = {update_skill}/>
         <hr/>
         <Experience update_experience = {update_experience}/>
+        <hr/>
       </div>
 
       <div className="display-items">
         <BasicInfoDisplay basicInfo = {basicInfo}/>
+        <div className = "title">Educational Details: </div>
         <EducationDisplay education = {education} delete_education = {delete_education}/>
+        <hr/>
+        <div className = "title">Skills: </div>
         <SkillDisplay skills = {skills} delete_skill = {delete_skill}/>
+        <hr/>
+        <div className = "title">Work Experience: </div>
         <ExperienceDisplay experience = {experience} delete_experience = {delete_experience}/>
       </div>
 

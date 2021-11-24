@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import "./experience.css";
 
 function Experience({update_experience}) {
 
@@ -24,8 +23,8 @@ function Experience({update_experience}) {
   }
 
   return (
-    <div className = "container-exp">
-      <div className = "heading-exp">Enter Work Experience: </div>
+    <div className = "container">
+      <div className = "heading">Enter Work Experience: </div>
 
       <div>
         <label>Enter Company's Name: </label>

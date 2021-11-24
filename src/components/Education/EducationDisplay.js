@@ -1,4 +1,5 @@
 import React from "react";
+import "./education.css";
 
 function EducationDisplay({education, delete_education}) {
 
@@ -6,9 +7,9 @@ function EducationDisplay({education, delete_education}) {
 
         education.map((e) => {
             return(
-                <div>
-                    <div>{e.schoolName}</div>
-                    <div>{e.courseName}</div>
+                <div className = "display-edu">
+                    <div>College/School: {e.schoolName}</div>
+                    <div>Course: {e.courseName}</div>
                     <div>From {e.dateBegin} to {e.dateEnd}</div>
                     <div>
                         <button onClick = {(x) => {
